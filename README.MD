@@ -63,4 +63,4 @@ This Project was Developed by [c4vxl](https://c4vxl.de)
 _**Note**: In case you are wondering why I am using PHP instead of just a static webpage, it's because platforms like Discord's link embedding system do not allow query parameters on static webpages. Using PHP allows for dynamic generation of meta tags based on the passed URL queries, enabling users to customize Open Graph or Twitter Cards dynamically._
 
 
-##### I am hosting this Script on my homepage: https://dcembed.c4vxl.de/
+##### I am hosting this Script on my website: https://dcembed.c4vxl.de/
