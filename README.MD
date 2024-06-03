@@ -24,7 +24,7 @@ https://your-domain.com/?meta1=value1&redir=https://c4vxl.de/
 
 Meta Tags:
 <meta content="value1" property="meta1">
-<meta content='https://google.com/' property='redir' />
+<meta http-equiv="refresh" content="0; url='https://c4vxl.de/'">
 ```
 <br>
 
