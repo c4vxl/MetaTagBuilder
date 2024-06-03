@@ -54,6 +54,8 @@
 
     if (!empty($_SERVER['QUERY_STRING'])) {
         $meta_tags = generate_meta_tags($_SERVER['QUERY_STRING']); // generate meta tags from url search params
+        if (!isset($_GET["debug"]) && isset($_GET["redir"])) $meta_tags .= '<meta http-equiv="refresh" content="0; url=' . $_GET["redir"] . '">';
+        print_r($meta_tags);
         echo $meta_tags; // print meta-tags as html
     }
     ?>
