@@ -17,6 +17,23 @@ Meta Tags:
 <meta content="value2" property="meta2">
 ```
 
+The user can create redirects on the website using the `redir` parameter:
+```html
+URL:
+https://your-domain.com/?meta1=value1&redir=https://c4vxl.de/
+
+Meta Tags:
+<meta content="value1" property="meta1">
+<meta content='https://google.com/' property='redir' />
+```
+<br>
+
+_**Note:** To debug a url with a redir parameter set, add `&debug` to the url:_
+
+```
+https://your-domain.com/?meta1=value1&debug&redir=https://c4vxl.de/
+```
+
 #### Custom Properties Example
 The user can also add custom properties to the meta tag by separating them with a semicolon (`;`) after the value.
 
@@ -61,6 +78,3 @@ This Project was Developed by [c4vxl](https://c4vxl.de)
 <br><br>
 
 _**Note**: In case you are wondering why I am using PHP instead of just a static webpage, it's because platforms like Discord's link embedding system do not allow query parameters on static webpages. Using PHP allows for dynamic generation of meta tags based on the passed URL queries, enabling users to customize Open Graph or Twitter Cards dynamically._
-
-
-##### I am hosting this Script on my website: https://dcembed.c4vxl.de/
